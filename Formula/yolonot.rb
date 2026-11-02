@@ -14,7 +14,7 @@ class Yolonot < Formula
     else
       url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.0/yolonot_darwin_amd64.tar.gz"
       sha256 "fee0962cb22497481f49c9ea2b2712ee2d598d710042da238d3d937031fe810d"
-    fi
+    end
   end
 
   on_linux do
@@ -24,7 +24,7 @@ class Yolonot < Formula
     else
       url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.0/yolonot_linux_amd64.tar.gz"
       sha256 "8399b12f8be6be53902f0ec0904b2dc9238ba818281af22d4cfc88ba23f9d84f"
-    fi
+    end
   end
 
   def install
