@@ -3,27 +3,27 @@
 
 class Yolonot < Formula
   desc "Permission firewall, auto-approve hooks & command guardrails for AI coding agents"
-  homepage "https://github.com/sezaakgun/yolonot"
-  version "1.0.0"
+  homepage "https://yolonot.dev"
+  version "1.0.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.0/yolonot_darwin_arm64.tar.gz"
-      sha256 "8f00f109a506327aec84c326df2c23ccfb998c4962530820dd070fc4becb93e3"
+      url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.1/yolonot_darwin_arm64.tar.gz"
+      sha256 "fa2ce296856a082f6951e09f34b4fa553cf3e117b141de6e91f8cccb73813bfb"
     else
-      url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.0/yolonot_darwin_amd64.tar.gz"
-      sha256 "fee0962cb22497481f49c9ea2b2712ee2d598d710042da238d3d937031fe810d"
+      url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.1/yolonot_darwin_amd64.tar.gz"
+      sha256 "3da5be142092e4f8229c949cb6a1a0158489167d0395b31c7d0fbecf24365288"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.0/yolonot_linux_arm64.tar.gz"
-      sha256 "877d706f8c4966c842a669622ef66a24bdac6e45c7c049a667b3ffcb9ef54868"
+      url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.1/yolonot_linux_arm64.tar.gz"
+      sha256 "125c5945875e42b08d173d05ca68b2d6a55a4a9708ad58f60d02d91fecf40a71"
     else
-      url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.0/yolonot_linux_amd64.tar.gz"
-      sha256 "8399b12f8be6be53902f0ec0904b2dc9238ba818281af22d4cfc88ba23f9d84f"
+      url "https://github.com/sezaakgun/yolonot/releases/download/v1.0.1/yolonot_linux_amd64.tar.gz"
+      sha256 "c11ba5da81b0d03afef6ae480ae98101188f1e7389b0c29a35a39f0f635d18d2"
     end
   end
 
@@ -32,6 +32,6 @@ class Yolonot < Formula
   end
 
   test do
-    assert_match "1.0.0", shell_output("#{bin}/yolonot --version")
+    assert_match "1.0.1", shell_output("#{bin}/yolonot version")
   end
 end
