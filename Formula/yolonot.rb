@@ -5,7 +5,7 @@ class Yolonot < Formula
   desc "Permission firewall, auto-approve hooks & command guardrails for AI coding agents"
   homepage "https://github.com/sezaakgun/yolonot"
   version "1.0.0"
-  license "MIT"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
